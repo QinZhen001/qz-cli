@@ -1,9 +1,10 @@
 {
-  "name": "buzz-cli",
+  "name": "rte-cli",
   "version": "1.0.0",
   "description": "my node cli",
-  "main": "index.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "type": "module",
   "files": [
     "bin",
     "dist",
@@ -11,10 +12,10 @@
     "global.d.ts"
   ],
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=16.0.0"
   },
   "bin": {
-    "buzz-cli": "bin/buzz"
+    "rte-cli": "bin/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -28,7 +29,8 @@
   "dependencies": {
     "download-git-repo": "^3.0.2",
     "commander": "^12.1.0",
-    "chalk": "^5.3.0"
+    "chalk": "^5.3.0",
+    "inquirer": "^9.2.22"
   },
   "devDependencies": {
     "@types/node": "^14.14.10",
