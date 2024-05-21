@@ -1,16 +1,25 @@
-# node-cli
+[https://2ality.com/2021/06/typescript-esm-nodejs.html](https://2ality.com/2021/06/typescript-esm-nodejs.html)
 
-node cli
+# Install
 
-## minimist
+In the project root path run the following command to install dependencies.
 
-parse argument options
+```bash
+npm install
+```
 
-This module is the guts of optimist's argument parser without all the fanciful decoration.
+# Dev
 
-## help-me
+Use the following command to run the sample project.
 
-Help command for node, to use with [minimist](http://npm.im/minimist) and [commist](http://npm.im/commist).
+```bash
+npm link
+npm run dev
+```
+
+# Build
+
+# Package
 
 ## chalk
 
@@ -114,3 +123,13 @@ fs.watch/fs.watchFile 的代替品
 `fs-extra` adds file system methods that aren't included in the native `fs` module and adds promise support to the `fs` methods. It also uses [`graceful-fs`](https://github.com/isaacs/node-graceful-fs) to prevent `EMFILE` errors. It should be a drop in replacement for `fs`.
 
 fs-extra 添加了原生 fs 模块中未包含的文件系统方法，并为 fs 方法添加了 Promise 支持。它还使用 Graceful-fs 来防止 EMFILE 错误。应该是fs的替代品。
+
+## dotenv
+
+Dotenv is a zero-dependency module that loads environment variables from a `.env` file into [`process.env`](https://nodejs.org/docs/latest/api/process.html#process_process_env).
+
+## blessed-contrib
+
+Build dashboards (or any other application) using ascii/ansi art and javascript.
+
+在命令行中构建仪表盘/图表等

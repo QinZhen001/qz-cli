@@ -1,24 +1,31 @@
 import { Command } from "commander"
-import { run } from "./run"
+import { runCommand as runCommandDemo } from "./demo"
+import { runCommand as runCommandToken } from "./token"
 
 const program = new Command()
 
 program
-  .name("buzz-cli")
+  .name("rte-cli")
   .version("1.0.0")
-  .description("Buzz CLI is a command line tool to buzz your strings!")
+  .description("RTE CLI is a command line tool to buzz your strings!")
 
 program
-  .command("run")
-  .description("Run description xxxxxxxxxxxxxxxxxxx")
-  .argument("<string>", "string to split")
-  .option("--first", "display just the first substring")
-  .option("-s, --separator <char>", "separator character", ",")
-  .action((str, options) => {
-    run(str, options)
+  .command("demo")
+  .description("Run demo xxxxxxxxxxxxxxxxxxx")
+  // .argument("<string>", "string to split")
+  // .option("--first", "display just the first substring")
+  // .option("-s, --separator <char>", "separator character", ",")
+  .action(() => {
+    runCommandDemo()
   })
-
-// program.command('create')
-// ...
+program
+  .command("token")
+  .description("Run token xxxxxxxxxxxxxxxxxxx")
+  // .argument("<string>", "string to split")
+  // .option("--first", "display just the first substring")
+  // .option("-s, --separator <char>", "separator character", ",")
+  .action((...args) => {
+    runCommandToken(args)
+  })
 
 program.parse(process.argv)

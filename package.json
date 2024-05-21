@@ -1,8 +1,8 @@
 {
-  "name": "buzz-cli",
+  "name": "rte-cli",
   "version": "1.0.0",
   "description": "my node cli",
-  "main": "index.js",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "bin",
@@ -14,7 +14,7 @@
     "node": ">=14.0.0"
   },
   "bin": {
-    "buzz-cli": "bin/buzz"
+    "rte-cli": "bin/index"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
