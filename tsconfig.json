@@ -1,7 +1,9 @@
 {
+  "compileOnSave": true,
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
     "experimentalDecorators": true,
+    "module": "CommonJS",
     "moduleResolution": "node",
     "noImplicitAny": false,
     "noUnusedLocals": true,
@@ -14,7 +16,6 @@
     "baseUrl": ".",
     "outDir": "dist",
     "rootDir": "./src",
-    "module": "commonjs",
     "sourceMap": true,
     "declaration": true
   },
