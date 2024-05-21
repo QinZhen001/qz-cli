@@ -1,5 +1,3 @@
-[https://2ality.com/2021/06/typescript-esm-nodejs.html](https://2ality.com/2021/06/typescript-esm-nodejs.html)
-
 # Install
 
 In the project root path run the following command to install dependencies.
@@ -18,6 +16,12 @@ npm run dev
 ```
 
 # Build
+
+Use the following command to build the sample project.
+
+```bash
+npm run build
+```
 
 # Package
 

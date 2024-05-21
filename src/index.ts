@@ -18,6 +18,7 @@ program
   .action(() => {
     runCommandDemo()
   })
+
 program
   .command("token")
   .description("Run token xxxxxxxxxxxxxxxxxxx")
