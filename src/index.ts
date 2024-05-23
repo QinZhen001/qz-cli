@@ -2,10 +2,12 @@ import { Command } from "commander"
 import { runCommand as runCommandDemo } from "./demo"
 import { runCommand as runCommandToken } from "./token"
 
+console.log("Hello, world!")
+
 const program = new Command()
 
 program
-  .name("rte-cli")
+  .name("qz-cli")
   .version("1.0.0")
   .description("RTE CLI is a command line tool to buzz your strings!")
 
